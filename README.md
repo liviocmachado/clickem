@@ -12,7 +12,7 @@ use Clickem\UrlShortener\Exceptions\ApiException;
     
 $clickem = new Clickem('YOUR-TOKEN');
     
-// Simple shortening
+// Simple shortening   
 $url = $clickem->shorten('https://example.com/long-page');  
 echo $url->short_url;   // https://clickem.me/aB3xY1  
 echo $url->code;        // aB3xY1  
