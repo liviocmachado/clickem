@@ -8,15 +8,15 @@ use Clickem\UrlShortener\Exceptions\ApiException;
     
 $clickem = new Clickem('seu-token-aqui');
     
-// Encurtamento simples  
+// Simple shortening
 $url = $clickem->shorten('https://exemplo.com/pagina-longa');  
 echo $url->short_url;   // https://clickem.me/aB3xY1  
 echo $url->code;        // aB3xY1  
     
-// Com data de expiração  
+// With an expiration date  
 $url = $clickem->shorten('https://exemplo.com/pagina-longa', '2025-12-31');
     
-// Tratamento de erros  
+// Error handling 
 try {  
     $url = $clickem->shorten('https://...');  
 } catch (ApiException $e) {  
@@ -24,5 +24,5 @@ try {
     echo $e->getErrors();     // array com erros de validação  
 }  
     
-// ShortUrl implementa __toString, então:  
+// ShortUrl:  
 echo (string) $url;  // https://clickem.me/aB3xY1
