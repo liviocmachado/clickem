@@ -24,5 +24,5 @@ try {
     echo $e->getErrors();     // array com erros de validação  
 }  
     
-// ShortUrl implementa __toString, então:
+// ShortUrl implementa __toString, então:  
 echo (string) $url;  // https://clickem.me/aB3xY1
