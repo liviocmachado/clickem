@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/liviocmachado/clickem/blob/logo.png?raw=true">
+  <img src="https://raw.githubusercontent.com/liviocmachado/clickem/refs/heads/main/logo.png">
 </p>
   
 Run composer:
