@@ -6,22 +6,22 @@ composer require clickem/url-shortener
 use Clickem\UrlShortener\Clickem;  
 use Clickem\UrlShortener\Exceptions\ApiException;  
     
-$clickem = new Clickem('seu-token-aqui');
+$clickem = new Clickem('YOUR-TOKEN');
     
 // Simple shortening
-$url = $clickem->shorten('https://exemplo.com/pagina-longa');  
+$url = $clickem->shorten('https://example.com/long-page');  
 echo $url->short_url;   // https://clickem.me/aB3xY1  
 echo $url->code;        // aB3xY1  
     
 // With an expiration date  
-$url = $clickem->shorten('https://exemplo.com/pagina-longa', '2025-12-31');
+$url = $clickem->shorten('https://example.com/long-page', '2025-12-31');
     
 // Error handling 
 try {  
     $url = $clickem->shorten('https://...');  
 } catch (ApiException $e) {  
-    echo $e->getStatusCode(); // 401, 422, etc.  
-    echo $e->getErrors();     // array com erros de validação  
+    echo $e->getStatusCode();  
+    echo $e->getErrors();  
 }  
     
 // ShortUrl:  
