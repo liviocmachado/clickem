@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/liviocmachado/clickem/blob/logo.png?raw=true">
+</p>
+  
 Run composer:
 ```sh
 composer require clickem/url-shortener
