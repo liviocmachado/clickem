@@ -1,8 +1,8 @@
-use Clickem\UrlShortener\Clickem;
-use Clickem\UrlShortener\Exceptions\ApiException;
-
+use Clickem\UrlShortener\Clickem;  
+use Clickem\UrlShortener\Exceptions\ApiException;  
+    
 $clickem = new Clickem('seu-token-aqui');
-
+    
 // Encurtamento simples
 $url = $clickem->shorten('https://exemplo.com/pagina-longa');
 echo $url->short_url;   // https://clickem.me/aB3xY1
