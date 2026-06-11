@@ -16,9 +16,9 @@ echo $url->code;        // aB3xY1
 // With an expiration date  
 $url = $clickem->shorten('https://example.com/long-page', '2025-12-31');
     
-// Error handling 
-try {  
-    $url = $clickem->shorten('https://...');  
+
+try {   
+    $url = $clickem->shorten('https://...');    
 } catch (ApiException $e) {  
     echo $e->getStatusCode();  
     echo $e->getErrors();  
