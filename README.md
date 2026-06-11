@@ -1,3 +1,8 @@
+Run composer:
+```sh
+composer require clickem/url-shortener
+```
+  
 use Clickem\UrlShortener\Clickem;  
 use Clickem\UrlShortener\Exceptions\ApiException;  
     
